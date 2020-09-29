@@ -32,4 +32,18 @@ Return:
 """
 def lambda_school(n):
     # Your code here
+    output = []
 
+    for number in range(1, n):
+        if number % 3 == 0 and number % 5 == 0:
+            output.append("lambdaschool")
+        elif number % 5 == 0: 
+            output.append("School")
+        elif number % 3 == 0: 
+            output.append("Lambda")
+        else:
+            output.append(str(number))
+    print(output)
+    return output
+
+lambda_school(20)
